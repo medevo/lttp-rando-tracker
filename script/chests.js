@@ -2518,17 +2518,26 @@ chests[59] = {
         var isAccessible;
         switch (logic) {
             case "nmg":
-                isAccessible = items.allpowder >= 2 && (items.hammer || (items.moonpearl && items.mirror && items.glove === 2));
+                isAccessible = (items.hammer || (items.moonpearl && items.mirror && items.glove === 2));
                 break;
             case "owg":
-                isAccessible = items.allpowder >= 2 && (items.hammer || items.boots || (items.moonpearl && items.mirror && items.glove === 2 && regions.northWestDarkWorld()));
+                isAccessible = (items.hammer || items.boots || (items.moonpearl && items.mirror && items.glove === 2 && regions.northWestDarkWorld()));
                 break;
             case "major":
-                isAccessible = items.allpowder >= 2 && (items.hammer || items.mirror);
+                isAccessible = (items.hammer || items.mirror);
                 break;
         }
         if (isAccessible) {
-            return "available";
+			{
+				if(items.allpowder == 1){
+					return "glitched";
+				}
+				else if (items.allpowder >= 2)
+				{
+					return "available";
+				}
+				else return "unavailable";
+			}
         } else {
             return "unavailable";
         }
