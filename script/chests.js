@@ -1851,7 +1851,7 @@ chests[28] = {
         var isAccessible;
         switch (logic) {
             case "nmg":
-                isAccessible = items.glove === 2 && items.moonpearl && regions.northWestDarkWorld();
+                isAccessible = items.glove === 2 && items.moonpearl && regions.northWestDarkWorld();  //&& chests[60].isOpened
                 break;
             case "owg":
                 isAccessible = chests[60].isAvailable() === "available" && (items.moonpearl && ((items.glove === 2 && regions.northWestDarkWorld()) ||
@@ -2529,8 +2529,8 @@ chests[59] = {
         }
         if (isAccessible) {
 			{
-				if(items.allpowder == 1){
-					return "glitched";
+				if(items.allpowder == 1) { 
+					return "glitched"; //&& !chests[35].isOpened
 				}
 				else if (items.allpowder >= 2)
 				{
