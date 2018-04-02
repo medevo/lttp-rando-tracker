@@ -8,7 +8,12 @@ The original tracker readme is located at `original_readme.txt`.
 To download this tracker for local use, click on the Clone or download button on the top right and select Download ZIP. Extract the zip somewhere and you're ready to be used on your browser.
 Use Window Capture on your streaming application to capture it. If you're using Chrome, make sure that hardware acceleration is disabled in the advanced settings.
 
-You can also use it at [https://fabioyk.github.io/lttp-rando-tracker/tracker_map.html](https://fabioyk.github.io/lttp-rando-tracker/tracker_map.html)
+You can also use it at [https://medevo.github.io/lttp-rando-tracker/tracker_map.html](https://medevo.github.io/lttp-rando-tracker/tracker_map.html)
+
+This is a fork of https://github.com/fabioyk/lttp-tracker
+Modifications
+* Fake Powder Glitched Check Reminder
+* Modified Sprite to Valeera
 
 ## New Features
 Some of these features were simply based on my needs, so it may not be fit for everybody.
