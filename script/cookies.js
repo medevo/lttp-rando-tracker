@@ -39,10 +39,10 @@ var cookieDefault = {
       pod: true,
       mire: true,
       tr: true,
-      sewers: false
+      sewers: true
     }  
   },
-  mode: 'standard',
+  mode: 'open',
   logic: 'nmg',
   goal: 'ganon',
   goModeRequirements: {
