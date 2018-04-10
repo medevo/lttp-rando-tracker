@@ -2529,7 +2529,7 @@ chests[59] = {
         }
         if (isAccessible) {
 			{
-				if(items.allpowder == 1) { 
+				if(items.allpowder == 1 && items.somaria) { 
 					return "glitched"; //&& !chests[35].isOpened
 				}
 				else if (items.allpowder >= 2)
