@@ -281,7 +281,7 @@ function resetItems() {
         bow: 0,
         boomerang: 0,
         hookshot: false,
-        bombs: true,
+        bombs: false,
         allpowder: 0,    
 
         firerod: false,
